@@ -1,6 +1,7 @@
 FROM ubuntu:14.04
 MAINTAINER takashi imagire "imagire@gmail.com"
 
+RUN dpkg --add-architecture i386
 RUN apt-get update -y && \
     apt-get install -y libc6-dev-i386 lib32gmp-dev && \
     wget http://www.pllab.riec.tohoku.ac.jp/smlsharp/download/smlsharp-2.0.0-2_ubuntu-amd64.deb && \
