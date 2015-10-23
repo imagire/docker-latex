@@ -8,3 +8,5 @@ RUN apt-get install -y software-properties-common
 RUN apt-get install -y texlive
 RUN apt-get install -y texlive-lang-cjk xdvik-ja texlive-fonts-recommended
 RUN apt-get install -y texlive-humanities
+
+RUN apt-get install -y make
